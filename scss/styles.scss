@@ -1,0 +1,202 @@
+@import '_variables';
+@import '_mixins';
+@import '_loops';
+@import '_typography';
+@import '_icons';
+
+// Utility classes
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+body{
+	font-family:$primary-font;
+	margin:0;
+}
+a{
+	color:$link-blue;
+	text-decoration: none;
+}
+.nav{
+	height: 100px;
+	background-color:$byui-blue;
+}
+.title-pag{
+	height: 100px;
+	background-color:$light-gray; 
+	border-bottom: 1px solid $med-gray;
+	margin-bottom:4em;
+	font-family:$primary-font;	
+}
+h1{
+	font-weight: 300;
+	margin:auto;
+	color:$dark-gray;
+}
+a.icon-byui-logo:before {
+  content: '\e90d';
+}
+
+.container{
+	max-width: 1280px;
+	margin:auto;
+}
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.row{
+	display:flex;
+	flex-wrap: wrap;
+	margin: 0 0 2em 0;
+}
+.border-1{
+	border: 1px solid $med-gray;
+}
+.border-1-bottom{
+	border-bottom: 1px solid $med-gray;
+}
+.box{
+ margin-top:2em;
+}
+.margin-0{
+	margin: 0;
+}
+.box-links{
+    padding: 0 0.5em 0.5em 0.5em;
+	font-size: 0.9em;
+}
+
+.information{
+	font-weight: 700;
+	background-color:$med-gray;
+	margin-bottom: 2.5em;
+	padding: 0.7em;
+	border-radius: 0.3em;
+
+}
+.listlinks{	
+	color:$link-blue;
+	background-color: $super-light-gray;
+	font-size: 0.95em;
+}
+.listlinks-title{
+	background-color: $dark-gray;
+	color:$super-light-gray;
+	font-size: 1.4em;
+}
+.listlinks-title, .listlinks{	
+	border:1px solid $med-gray;
+	border-top:0;
+}
+.listlinks-bottom{
+	margin-top:2.5em;
+	font-size: 0.9em;
+}
+.listlinks-bottom-links{
+	display: flex;
+	flex-direction: row;
+	border-bottom:1px solid $med-gray;
+}
+.listlinks-bottom-title{
+    background-color:$byui-blue;
+	color:$super-light-gray;
+	font-size: 1.4em;
+}
+ .listlinks, .listlinks-title,.listlinks-bottom-links, .listlinks-bottom-title{
+	padding: 0.5em;
+	list-style:none;
+}
+
+#newsroom-section{
+	padding-right: 2em;
+	margin:auto;
+}
+.newsroom-section-title{
+	padding-bottom:0.7em;
+	;
+	border-bottom:1px solid $med-gray;
+}
+.newsroom-img{
+	padding:0 2em 2em 0;
+}
+@media (max-width: 768px) {
+	.newsroom-img{
+		display:none;
+	}
+}
+
+.newsroom-date{
+	font-weight: 600;
+	font-size: 0.7em;	
+}	
+.newsroom-title h4{
+	font-size: 1.1em;
+	margin-top:10px;
+}
+.newsroom-paragraph{
+	margin:-15px 0 25px 0;
+	font-weight: 300;
+	font-size: 1.1em;
+}
+.devo-title{
+	padding: 0.5em;
+	background-color:$light-gray;
+	border:1px solid $med-gray;
+	border-bottom: 0;
+	border-top-left-radius: 0.25em;
+	border-top-right-radius: 0.25em;
+	font-weight: 600;
+}
+.devo-img{
+	padding: 0.5em;
+	border:1px solid $med-gray;
+}
+.btn{
+	float: right;
+	margin:0 0 2em 5px;
+}
+.btn a{
+	padding:1em 2em 1em 2em;
+	background-color: $byui-blue;
+	color:$super-light-gray;
+	border-radius: 0.3em;
+	font-weight: 700;
+	width: 160px;
+	
+}
+footer{
+	background-color:$light-gray;
+	height: 100px;
+	border-top: 1px solid $med-gray; 
+	
+}
+.back-byui{
+	height: 78px;
+	backgroun-color: white;
+	background-image:url(http://www.byui.edu/prebuilt/stylenew/images/foot/taylor_graphic.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 4em;
+}
+	
+
+
+
+
+
+

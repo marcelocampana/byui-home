@@ -1,0 +1,16 @@
+@media (min-width: 769px) {
+	@for $index from 1 to $total-columns + 1 {
+
+		.col-#{$index} {
+			@include col-($index);
+		}
+	}
+}
+@media (max-width: 768px) {
+	@for $index from 1 to $total-columns + 1 {
+
+		.col-sm-#{$index} {
+			@include col-sm-($index);
+		}
+	}
+}

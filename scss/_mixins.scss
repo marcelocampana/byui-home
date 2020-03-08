@@ -1,0 +1,14 @@
+@mixin col-($span-num) {
+	$max-num-col:$total-columns/$span-num;
+	flex:0 0 100%/$max-num-col;
+	max-width: 100%/$max-num-col;
+	padding-right: 1em;
+    padding-left: 1em;
+}
+@mixin col-sm-($span-num) {
+	$max-num-col:$total-columns/$span-num;
+	flex:0 0 100%/$max-num-col ;
+	max-width: 100%/$max-num-col ;
+
+}
+
